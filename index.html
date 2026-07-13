@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NEXO — Soluciones digitales a medida: páginas web, sistemas de gestión y automatización de procesos."
+    />
+    <title>NEXO — Soluciones digitales a medida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="NEXO">
+        <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" fill="currentColor" />
+          <path
+            fill="#f3f6f4"
+            d="M7 25V7h3.4l7.2 11.4V7H21v18h-3.4l-7.2-11.4V25H7z"
+          />
+          <circle cx="24.5" cy="8.5" r="2" fill="#c45a2c" />
+        </svg>
+        <span class="brand-name">NEXO</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#servicios" data-i18n="nav.services">Servicios</a>
+        <a href="#proceso" data-i18n="nav.process">Proceso</a>
+        <a href="#nosotros" data-i18n="nav.why">Nosotros</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Idioma">
+          <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">
+            ES
+          </button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn-sm" href="#contacto" data-i18n="nav.cta">Solicitar propuesta</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          data-i18n-aria="menu"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <nav id="mobile-nav" class="mobile-nav" hidden>
+      <a href="#servicios" data-i18n="nav.services">Servicios</a>
+      <a href="#proceso" data-i18n="nav.process">Proceso</a>
+      <a href="#nosotros" data-i18n="nav.why">Nosotros</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      <a class="mobile-cta" href="#contacto" data-i18n="nav.cta">Solicitar propuesta</a>
+    </nav>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            width="2400"
+            height="1600"
+          />
+          <div class="hero-media-veil"></div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-brand">
+            <svg class="logo logo-hero" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" fill="#f3f6f4" />
+              <path
+                fill="#10212a"
+                d="M7 25V7h3.4l7.2 11.4V7H21v18h-3.4l-7.2-11.4V25H7z"
+              />
+              <circle cx="24.5" cy="8.5" r="2" fill="#c45a2c" />
+            </svg>
+            <span>NEXO</span>
+          </p>
+          <h1 data-i18n="hero.title">Soluciones digitales a medida para operar con claridad</h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            Menos planillas. Más control. Más ventas.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#contacto" data-i18n="hero.ctaPrimary">Solicitar propuesta</a>
+            <a class="btn btn-ghost" href="#servicios" data-i18n="hero.ctaSecondary"
+              >Explorar servicios</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="intro reveal">
+        <p class="intro-text" data-i18n="intro">
+          Ayudamos a empresas, comercios y emprendedores a mejorar sus procesos mediante el
+          desarrollo de páginas web y sistemas personalizados.
+        </p>
+      </section>
+
+      <section id="servicios" class="section services">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="services.eyebrow">Qué ofrecemos</p>
+          <h2 data-i18n="services.title">Tres líneas de servicio, un mismo objetivo: resultados</h2>
+        </div>
+
+        <article class="service reveal">
+          <div class="service-index">01</div>
+          <div class="service-body">
+            <h3 data-i18n="services.web.title">Páginas web profesionales</h3>
+            <ul>
+              <li data-i18n="services.web.i1">Landing pages</li>
+              <li data-i18n="services.web.i2">Sitios corporativos</li>
+              <li data-i18n="services.web.i3">Catálogos digitales</li>
+              <li data-i18n="services.web.i4">Formularios de contacto</li>
+              <li data-i18n="services.web.i5">Presencia online profesional</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service reveal">
+          <div class="service-index">02</div>
+          <div class="service-body">
+            <h3 data-i18n="services.systems.title">Sistemas de gestión</h3>
+            <ul>
+              <li data-i18n="services.systems.i1">Gestión de clientes</li>
+              <li data-i18n="services.systems.i2">Control de ventas</li>
+              <li data-i18n="services.systems.i3">Administración de stock</li>
+              <li data-i18n="services.systems.i4">Seguimiento de tareas</li>
+              <li data-i18n="services.systems.i5">Reportes e indicadores</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service service-spotlight reveal">
+          <div class="service-index">03</div>
+          <div class="service-body">
+            <h3 data-i18n="services.auto.title">Automatización de procesos</h3>
+            <p data-i18n="services.auto.text">
+              Transformamos tareas manuales en procesos digitales que permiten ahorrar tiempo,
+              reducir errores y aumentar la productividad.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="proceso" class="section process">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="process.eyebrow">Metodología</p>
+          <h2 data-i18n="process.title">
+            Acompañamiento integral, de la definición al soporte operativo
+          </h2>
+        </div>
+        <ol class="process-track">
+          <li class="reveal" data-i18n="process.s1">Análisis</li>
+          <li class="reveal" data-i18n="process.s2">Diseño</li>
+          <li class="reveal" data-i18n="process.s3">Desarrollo</li>
+          <li class="reveal" data-i18n="process.s4">Implementación</li>
+          <li class="reveal" data-i18n="process.s5">Capacitación</li>
+          <li class="reveal" data-i18n="process.s6">Soporte</li>
+        </ol>
+      </section>
+
+      <section id="nosotros" class="section why">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="why.eyebrow">Nuestro enfoque</p>
+          <h2 data-i18n="why.title">Por qué las empresas eligen NEXO</h2>
+        </div>
+        <ul class="why-list">
+          <li class="reveal" data-i18n="why.i1">Soluciones adaptadas a cada negocio</li>
+          <li class="reveal" data-i18n="why.i2">Equipo dedicado y atención cercana</li>
+          <li class="reveal" data-i18n="why.i3">Comunicación clara y directa</li>
+          <li class="reveal" data-i18n="why.i4">Acompañamiento continuo post-lanzamiento</li>
+        </ul>
+      </section>
+
+      <section id="contacto" class="section contact">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+            <h2 data-i18n="contact.title">Cuéntenos su desafío. Diseñamos la solución.</h2>
+            <p data-i18n="contact.lead">
+              Recibirá una propuesta con alcance, plazos y siguiente paso — sin compromiso.
+            </p>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <label>
+              <span data-i18n="contact.name">Nombre</span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label>
+              <span data-i18n="contact.email">Email corporativo</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>
+              <span data-i18n="contact.message">¿En qué podemos ayudarle?</span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="btn" type="submit" data-i18n="contact.submit">Enviar solicitud</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#inicio" aria-label="NEXO">
+        <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" fill="currentColor" />
+          <path
+            fill="#f3f6f4"
+            d="M7 25V7h3.4l7.2 11.4V7H21v18h-3.4l-7.2-11.4V25H7z"
+          />
+          <circle cx="24.5" cy="8.5" r="2" fill="#c45a2c" />
+        </svg>
+        <span class="brand-name">NEXO</span>
+      </a>
+      <p data-i18n="footer">Soluciones digitales a medida para empresas y emprendedores.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
