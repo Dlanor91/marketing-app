@@ -30,7 +30,7 @@ const translations = {
       "Dependes de una sola persona que “tiene todo en la cabeza”.",
     "problems.close":
       "Si te identificas con alguna, no hace falta seguir así: podemos ayudarte a poner orden y recuperar control.",
-    "problems.cta": "Quiero ordenar esto",
+    "problems.cta": "Quiero mejorar mi negocio",
     "services.eyebrow": "Qué hacemos",
     "services.title": "Tres formas concretas de mejorar tu negocio",
     "services.lead":
@@ -221,7 +221,7 @@ const translations = {
     "problems.i8": "You depend on one person who “has it all in their head”.",
     "problems.close":
       "If any of these sound familiar, you don't have to keep living like this — we can help you get organized and back in control.",
-    "problems.cta": "I want to fix this",
+    "problems.cta": "I want to improve my business",
     "services.eyebrow": "What we do",
     "services.title": "Three concrete ways to improve your business",
     "services.lead":

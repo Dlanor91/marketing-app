@@ -502,7 +502,7 @@ ol {
 .section-lead {
   margin: 1rem 0 0;
   color: var(--ink-soft);
-  max-width: 38rem;
+  max-width: 56rem;
 }
 
 .eyebrow {
@@ -562,7 +562,7 @@ ol {
 
 .problems-close {
   margin: 2rem 0 0;
-  max-width: 40rem;
+  max-width: 56rem;
   font-size: 1.1rem;
   color: var(--teal-deep);
   font-weight: 500;

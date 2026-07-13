@@ -125,15 +125,34 @@ Incluir señales de confianza (sin compromiso, respuesta en 24 h, lenguaje claro
 - [ ] ¿Un dueño de pyme lo entiende sin saber de IT?
 - [ ] ¿Habla de resultados, no de tecnología?
 - [ ] ¿Español sin voseo?
-- [ ] ¿ES y EN actualizados?
+- [ ] ¿ES y EN actualizados en `app.js` (y fallback ES en HTML si aplica)?
 - [ ] ¿CTAs claros y humanos?
 - [ ] ¿Funnel completo intacto?
 - [ ] ¿Casos reales sin inventar?
 - [ ] ¿Semántica + `rem` + responsive OK?
 - [ ] ¿Hero sigue rotando imágenes locales?
+- [ ] ¿Si el cambio lo amerita, actualizaste `README.md`?
 
 ---
 
-## 10. Fuera de alcance por defecto
+## 10. Documentación (`README.md`)
+
+**Siempre que el cambio lo amerite**, actualizar `README.md` en el mismo trabajo. No dejar el README desactualizado respecto al estado real del proyecto.
+
+Lo amerita, entre otros:
+
+- Nueva sección, eliminada o renombrada
+- Cambio de marca, CTAs principales o idioma
+- Cambio de estructura de archivos / assets / deploy
+- Nuevo caso real o cambio relevante de copy/SEO
+- Cambio de comportamiento (carrusel, formulario, i18n)
+
+No hace falta tocar el README por typos menores o ajustes cosméticos de CSS sin impacto documental.
+
+El archivo de reglas del agente es **`Agent.md`**. El README debe enlazarlo correctamente.
+
+---
+
+## 11. Fuera de alcance por defecto
 
 No agregar stacks, blogs técnicos, dashboards de vanity metrics, ni secciones “sobre nosotros” genéricas que no empujen al contacto, salvo pedido explícito del dueño del producto.
