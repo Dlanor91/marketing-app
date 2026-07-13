@@ -319,7 +319,7 @@ ol {
   gap: 0.5rem;
   min-height: 3.05rem;
   padding: 0.8rem 1.5rem;
-  border: 0;
+  border: var(--hairline) solid transparent;
   background: var(--accent);
   color: #fff;
   font-weight: 600;
@@ -461,10 +461,25 @@ ol {
 }
 
 .hero-actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 0.75rem;
   margin-top: 2rem;
+  width: min(100%, 22rem);
+}
+
+.hero-actions .btn {
+  width: 100%;
+  min-height: 3.15rem;
+  padding-inline: 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 40rem) {
+  .hero-actions {
+    grid-template-columns: 1fr 1fr;
+    width: min(100%, 36rem);
+  }
 }
 
 .hero-note {
