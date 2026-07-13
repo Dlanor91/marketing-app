@@ -45,8 +45,16 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 70% 45% at 0% 0%, rgba(15, 107, 100, 0.12), transparent 55%),
-    radial-gradient(ellipse 50% 35% at 100% 10%, rgba(196, 90, 44, 0.07), transparent 50%),
+    radial-gradient(
+      ellipse 70% 45% at 0% 0%,
+      rgba(15, 107, 100, 0.12),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 50% 35% at 100% 10%,
+      rgba(196, 90, 44, 0.07),
+      transparent 50%
+    ),
     linear-gradient(180deg, #eef2f0 0%, var(--paper) 45%, #e9eeeb 100%);
 }
 
@@ -126,7 +134,9 @@ ol {
   background: rgba(242, 245, 243, 0.82);
   backdrop-filter: blur(1rem);
   border-bottom: var(--hairline) solid transparent;
-  transition: border-color 0.3s var(--ease), background 0.3s var(--ease);
+  transition:
+    border-color 0.3s var(--ease),
+    background 0.3s var(--ease);
 }
 
 .site-header.is-scrolled {
@@ -240,7 +250,9 @@ ol {
   height: 0.09375rem;
   background: var(--ink);
   transform: translateX(-50%);
-  transition: transform 0.3s var(--ease), top 0.3s var(--ease);
+  transition:
+    transform 0.3s var(--ease),
+    top 0.3s var(--ease);
 }
 
 .menu-toggle::before {
@@ -314,7 +326,10 @@ ol {
   font-size: 0.95rem;
   letter-spacing: 0.01em;
   cursor: pointer;
-  transition: background 0.25s var(--ease), transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+  transition:
+    background 0.25s var(--ease),
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease);
 }
 
 .btn:hover {
@@ -360,7 +375,8 @@ ol {
   min-height: 100svh;
   display: grid;
   align-items: end;
-  padding: calc(var(--header-h) + 2.5rem) clamp(1.25rem, 4vw, 3rem) clamp(3rem, 8vw, 5rem);
+  padding: calc(var(--header-h) + 2.5rem) clamp(1.25rem, 4vw, 3rem)
+    clamp(3rem, 8vw, 5rem);
   color: #f5f8f6;
   overflow: hidden;
 }
@@ -370,23 +386,41 @@ ol {
   inset: 0;
   z-index: 0;
   margin: 0;
+  overflow: hidden;
 }
 
-.hero-media img {
+.hero-slide {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 35%;
+  opacity: 0;
   transform: scale(1.06);
-  animation: heroZoom 14s var(--ease) forwards;
+  transition:
+    opacity 1.2s var(--ease),
+    transform 8s var(--ease);
+}
+
+.hero-slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
 }
 
 .hero-media::after {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 2;
   background:
-    linear-gradient(105deg, rgba(8, 18, 22, 0.86) 0%, rgba(8, 18, 22, 0.58) 52%, rgba(8, 18, 22, 0.4) 100%),
+    linear-gradient(
+      105deg,
+      rgba(8, 18, 22, 0.86) 0%,
+      rgba(8, 18, 22, 0.58) 52%,
+      rgba(8, 18, 22, 0.4) 100%
+    ),
     linear-gradient(180deg, rgba(8, 18, 22, 0.2) 0%, rgba(8, 18, 22, 0.78) 100%);
 }
 
@@ -440,13 +474,13 @@ ol {
 }
 
 .section {
-  padding: clamp(3.5rem, 9vw, 6.5rem) clamp(1.25rem, 4vw, 3rem);
+  padding: clamp(1.5rem, 9vw, 3rem) clamp(1.25rem, 4vw, 3rem);
   max-width: calc(var(--max) + 6rem);
   margin-inline: auto;
 }
 
 .section-head {
-  max-width: 40rem;
+  max-width: 56rem;
   margin-bottom: clamp(2rem, 5vw, 3.25rem);
 }
 
@@ -469,9 +503,9 @@ ol {
 .contact-intro h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.65rem, 3.5vw, 2.45rem);
+  font-size: clamp(1.55rem, 2.8vw, 2.15rem);
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.18;
   letter-spacing: -0.03em;
 }
 
@@ -533,7 +567,10 @@ ol {
   background: var(--card);
   border: var(--hairline) solid var(--line);
   padding: clamp(1.5rem, 3vw, 2rem);
-  transition: transform 0.35s var(--ease), border-color 0.35s var(--ease), box-shadow 0.35s var(--ease);
+  transition:
+    transform 0.35s var(--ease),
+    border-color 0.35s var(--ease),
+    box-shadow 0.35s var(--ease);
 }
 
 .service-card:hover,
@@ -676,6 +713,61 @@ ol {
   border-bottom: var(--hairline) solid var(--line);
 }
 
+.testimonial-grid {
+  grid-template-columns: 1fr;
+}
+
+.testimonial-grid--cases {
+  gap: 1.35rem;
+}
+
+.case-label {
+  margin: 0 0 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.testimonial-card h3 {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.testimonial-card > p:not(.case-label):not(.testimonial-meta) {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+}
+
+.case-results {
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+  margin: 0 0 1.25rem;
+}
+
+.case-results li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.case-results li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 0.35rem;
+  height: 0.35rem;
+  background: var(--teal);
+}
+
 .testimonial-card blockquote {
   margin: 0 0 1.25rem;
 }
@@ -693,6 +785,7 @@ ol {
   margin: 0;
   color: var(--ink-soft);
   font-size: 0.92rem;
+  font-weight: 600;
 }
 
 .faq-list {
@@ -838,7 +931,9 @@ ol {
   border: var(--hairline) solid var(--line);
   background: rgba(255, 255, 255, 0.75);
   cursor: pointer;
-  transition: border-color 0.2s, background 0.2s;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
 }
 
 .choice:hover {
@@ -886,7 +981,9 @@ ol {
 .reveal {
   opacity: 0;
   transform: translateY(1.5rem);
-  transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
+  transition:
+    opacity 0.65s var(--ease),
+    transform 0.65s var(--ease);
 }
 
 .reveal.is-visible {
@@ -902,15 +999,6 @@ ol {
   to {
     opacity: 1;
     transform: none;
-  }
-}
-
-@keyframes heroZoom {
-  from {
-    transform: scale(1.1);
-  }
-  to {
-    transform: scale(1);
   }
 }
 
@@ -954,7 +1042,7 @@ ol {
   }
 
   .testimonial-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .process-track {
@@ -1020,7 +1108,7 @@ ol {
     scroll-behavior: auto;
   }
 
-  .hero-media img,
+  .hero-slide,
   .hero-content,
   .reveal,
   .service-card,
@@ -1030,5 +1118,9 @@ ol {
     transition: none !important;
     opacity: 1;
     transform: none;
+  }
+
+  .hero-slide:not(.is-active) {
+    opacity: 0;
   }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -30,10 +30,7 @@
       content="Páginas que traen clientes, sistemas que organizan tu empresa y automatizaciones que eliminan trabajo repetitivo."
     />
     <meta property="og:url" content="https://foco.example.com/" />
-    <meta
-      property="og:image"
-      content="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80"
-    />
+    <meta property="og:image" content="assets/hero/negocio-equipo.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
@@ -127,7 +124,14 @@
       <a class="brand" href="#inicio" aria-label="FOCO">
         <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
           <rect width="32" height="32" fill="currentColor" />
-          <circle cx="16" cy="16" r="7.5" fill="none" stroke="#f2f5f3" stroke-width="2.2" />
+          <circle
+            cx="16"
+            cy="16"
+            r="7.5"
+            fill="none"
+            stroke="#f2f5f3"
+            stroke-width="2.2"
+          />
           <circle cx="16" cy="16" r="2.4" fill="#c45a2c" />
         </svg>
         <span class="brand-name">FOCO</span>
@@ -137,15 +141,31 @@
         <a href="#servicios" data-i18n="nav.services">Qué hacemos</a>
         <a href="#casos" data-i18n="nav.cases">Para tu negocio</a>
         <a href="#proceso" data-i18n="nav.process">Cómo trabajamos</a>
-        <a href="#faq" data-i18n="nav.faq">Preguntas</a>
+        <a href="#faq" data-i18n="nav.faq">Preguntas frecuentes</a>
       </nav>
       <menu class="header-actions">
         <fieldset class="lang-switch">
           <legend class="visually-hidden">Idioma</legend>
-          <button type="button" class="lang-btn is-active" data-lang="es" aria-pressed="true">ES</button>
-          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <button
+            type="button"
+            class="lang-btn is-active"
+            data-lang="es"
+            aria-pressed="true"
+          >
+            ES
+          </button>
+          <button
+            type="button"
+            class="lang-btn"
+            data-lang="en"
+            aria-pressed="false"
+          >
+            EN
+          </button>
         </fieldset>
-        <a class="btn btn-sm" href="#contacto" data-i18n="nav.cta">Hablemos de tu negocio</a>
+        <a class="btn btn-sm" href="#contacto" data-i18n="nav.cta"
+          >Hablemos de tu negocio</a
+        >
         <button
           class="menu-toggle"
           type="button"
@@ -161,15 +181,32 @@
       <a href="#servicios" data-i18n="nav.services">Qué hacemos</a>
       <a href="#casos" data-i18n="nav.cases">Para tu negocio</a>
       <a href="#proceso" data-i18n="nav.process">Cómo trabajamos</a>
-      <a href="#faq" data-i18n="nav.faq">Preguntas</a>
-      <a class="mobile-cta" href="#contacto" data-i18n="nav.cta">Hablemos de tu negocio</a>
+      <a href="#faq" data-i18n="nav.faq">Preguntas frecuentes</a>
+      <a class="mobile-cta" href="#contacto" data-i18n="nav.cta"
+        >Hablemos de tu negocio</a
+      >
     </nav>
 
     <main>
       <section id="inicio" class="hero">
         <figure class="hero-media" aria-hidden="true">
           <img
-            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=2400&q=80"
+            class="hero-slide is-active"
+            src="assets/hero/negocio-equipo.jpg"
+            alt=""
+            width="2400"
+            height="1600"
+          />
+          <img
+            class="hero-slide"
+            src="assets/hero/comercio-atencion.jpg"
+            alt=""
+            width="2400"
+            height="1600"
+          />
+          <img
+            class="hero-slide"
+            src="assets/hero/pyme-trabajo.jpg"
             alt=""
             width="2400"
             height="1600"
@@ -179,23 +216,35 @@
           <p class="hero-brand">
             <svg class="logo logo-hero" viewBox="0 0 32 32" aria-hidden="true">
               <rect width="32" height="32" fill="#f2f5f3" />
-              <circle cx="16" cy="16" r="7.5" fill="none" stroke="#0e1a20" stroke-width="2.2" />
+              <circle
+                cx="16"
+                cy="16"
+                r="7.5"
+                fill="none"
+                stroke="#0e1a20"
+                stroke-width="2.2"
+              />
               <circle cx="16" cy="16" r="2.4" fill="#c45a2c" />
             </svg>
             <span>FOCO</span>
           </p>
           <h1 data-i18n="hero.title">
-            Creamos páginas web, sistemas y automatizaciones para que tu negocio ahorre tiempo, venda
-            más y deje de depender del caos diario
+            Creamos páginas web, sistemas y automatizaciones para que tu negocio
+            ahorre tiempo, venda más y deje de depender del caos diario
           </h1>
           <p class="hero-lead" data-i18n="hero.lead">
-            Pensado para dueños de comercios, pymes y emprendimientos que necesitan orden, no
-            tecnicismos.
+            Pensado para dueños de comercios, pymes y emprendimientos que
+            necesitan orden, no tecnicismos.
           </p>
           <nav class="hero-actions" aria-label="Acciones principales">
-            <a class="btn" href="#contacto" data-i18n="hero.ctaPrimary">Quiero mejorar mi negocio</a>
-            <a class="btn btn-ghost" href="#servicios" data-i18n="hero.ctaSecondary"
-              >Qué podemos hacer por ti</a
+            <a class="btn" href="#contacto" data-i18n="hero.ctaPrimary"
+              >Quiero mejorar mi negocio</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="#servicios"
+              data-i18n="hero.ctaSecondary"
+              >Cómo podemos ayudarte</a
             >
           </nav>
           <p class="hero-note" data-i18n="hero.note">
@@ -206,32 +255,57 @@
 
       <section id="problemas" class="section problems">
         <header class="section-head reveal">
-          <p class="eyebrow" data-i18n="problems.eyebrow">¿Te suena familiar?</p>
-          <h2 data-i18n="problems.title">Si tu día a día se parece a esto, podemos ayudarte</h2>
+          <p class="eyebrow" data-i18n="problems.eyebrow">
+            ¿Te suena familiar?
+          </p>
+          <h2 data-i18n="problems.title">
+            Si tu día a día se parece a esto, podemos ayudarte
+          </h2>
         </header>
         <ul class="problem-list">
-          <li class="reveal" data-i18n="problems.i1">Tu negocio vive en Excel y WhatsApp.</li>
-          <li class="reveal" data-i18n="problems.i2">Copias la misma información una y otra vez.</li>
-          <li class="reveal" data-i18n="problems.i3">Pierdes tiempo en tareas que se repiten todos los días.</li>
-          <li class="reveal" data-i18n="problems.i4">Tu página web existe, pero casi no trae clientes.</li>
-          <li class="reveal" data-i18n="problems.i5">No sabes con claridad cuánto vendes ni qué te queda.</li>
-          <li class="reveal" data-i18n="problems.i6">El negocio creció, pero la administración sigue siendo manual.</li>
-          <li class="reveal" data-i18n="problems.i7">Se te escapan pedidos, stock o seguimientos de clientes.</li>
-          <li class="reveal" data-i18n="problems.i8">Dependes de una sola persona que “tiene todo en la cabeza”.</li>
+          <li class="reveal" data-i18n="problems.i1">
+            Tu negocio vive en Excel y WhatsApp.
+          </li>
+          <li class="reveal" data-i18n="problems.i2">
+            Copias la misma información una y otra vez.
+          </li>
+          <li class="reveal" data-i18n="problems.i3">
+            Pierdes tiempo en tareas que se repiten todos los días.
+          </li>
+          <li class="reveal" data-i18n="problems.i4">
+            Tu página web existe, pero casi no trae clientes.
+          </li>
+          <li class="reveal" data-i18n="problems.i5">
+            No sabes con claridad cuánto vendes ni qué te queda.
+          </li>
+          <li class="reveal" data-i18n="problems.i6">
+            El negocio creció, pero la administración sigue siendo manual.
+          </li>
+          <li class="reveal" data-i18n="problems.i7">
+            Se te escapan pedidos, stock o seguimientos de clientes.
+          </li>
+          <li class="reveal" data-i18n="problems.i8">
+            Dependes de una sola persona que “tiene todo en la cabeza”.
+          </li>
         </ul>
         <p class="problems-close reveal" data-i18n="problems.close">
-          Si te identificas con alguna, no hace falta seguir así: podemos ayudarte a poner orden y
-          recuperar control.
+          Si te identificas con alguna, no hace falta seguir así: podemos
+          ayudarte a poner orden y recuperar control.
         </p>
-        <a class="btn btn-dark reveal" href="#contacto" data-i18n="problems.cta">Quiero ordenar esto</a>
+        <a class="btn btn-dark reveal" href="#contacto" data-i18n="problems.cta"
+          >Quiero ordenar esto</a
+        >
       </section>
 
       <section id="servicios" class="section services">
         <header class="section-head reveal">
           <p class="eyebrow" data-i18n="services.eyebrow">Qué hacemos</p>
-          <h2 data-i18n="services.title">Tres formas concretas de mejorar tu negocio</h2>
+          <h2 data-i18n="services.title">
+            Tres formas concretas de mejorar tu negocio
+          </h2>
           <p class="section-lead" data-i18n="services.lead">
-            No vendemos “tecnología”. Vendemos tiempo recuperado, más ventas y menos errores.
+            No vendemos “tecnología”. Vendemos tiempo recuperado, más ventas y
+            menos errores.
           </p>
         </header>
 
@@ -239,87 +313,163 @@
           <li class="service-card reveal">
             <span class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 48 48" fill="none">
-                <rect x="6" y="10" width="36" height="26" stroke="currentColor" stroke-width="2" />
-                <path d="M6 18h36M16 36v4h16v-4" stroke="currentColor" stroke-width="2" />
+                <rect
+                  x="6"
+                  y="10"
+                  width="36"
+                  height="26"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M6 18h36M16 36v4h16v-4"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
               </svg>
             </span>
-            <h3 data-i18n="services.web.title">Páginas web que generan clientes</h3>
+            <h3 data-i18n="services.web.title">
+              Páginas web que generan clientes
+            </h3>
             <p data-i18n="services.web.problem">
-              Problema que resolvemos: tienes presencia online débil, o una web que no convence ni
-              convierte visitas en consultas.
+              Problema que resolvemos: tienes presencia online débil, o una web
+              que no convence ni convierte visitas en consultas.
             </p>
             <p class="service-for" data-i18n="services.web.for">
-              Para quién: comercios, profesionales y empresas que necesitan verse serios y recibir
-              pedidos o mensajes.
+              Para quién: comercios, profesionales y empresas que necesitan
+              verse serios y recibir pedidos o mensajes.
             </p>
             <ul>
-              <li data-i18n="services.web.b1">Que te encuentren y entiendan qué ofreces</li>
-              <li data-i18n="services.web.b2">Que te escriban o llamen con más facilidad</li>
+              <li data-i18n="services.web.b1">
+                Que te encuentren y entiendan qué ofreces
+              </li>
+              <li data-i18n="services.web.b2">
+                Que te escriban o llamen con más facilidad
+              </li>
               <li data-i18n="services.web.b3">Que se vea bien en el móvil</li>
-              <li data-i18n="services.web.b4">Formularios, catálogos y pedidos claros</li>
+              <li data-i18n="services.web.b4">
+                Formularios, catálogos y pedidos claros
+              </li>
             </ul>
             <p class="service-examples" data-i18n="services.web.examples">
-              Ejemplos: sitio de ferretería con catálogo, landing de servicios, web de inmobiliaria
-              con contacto rápido.
+              Ejemplos: sitio de ferretería con catálogo, landing de servicios,
+              web de inmobiliaria con contacto rápido.
             </p>
           </li>
 
           <li class="service-card reveal">
             <span class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 48 48" fill="none">
-                <rect x="8" y="8" width="14" height="14" stroke="currentColor" stroke-width="2" />
-                <rect x="26" y="8" width="14" height="14" stroke="currentColor" stroke-width="2" />
-                <rect x="8" y="26" width="14" height="14" stroke="currentColor" stroke-width="2" />
-                <rect x="26" y="26" width="14" height="14" stroke="currentColor" stroke-width="2" />
+                <rect
+                  x="8"
+                  y="8"
+                  width="14"
+                  height="14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <rect
+                  x="26"
+                  y="8"
+                  width="14"
+                  height="14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <rect
+                  x="8"
+                  y="26"
+                  width="14"
+                  height="14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <rect
+                  x="26"
+                  y="26"
+                  width="14"
+                  height="14"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
               </svg>
             </span>
-            <h3 data-i18n="services.sys.title">Sistemas para administrar tu empresa</h3>
+            <h3 data-i18n="services.sys.title">
+              Sistemas para administrar tu empresa
+            </h3>
             <p data-i18n="services.sys.problem">
-              Problema que resolvemos: clientes, ventas, stock y tareas están dispersos. Nadie tiene
-              el panorama completo.
+              Problema que resolvemos: clientes, ventas, stock y tareas están
+              dispersos. Nadie tiene el panorama completo.
             </p>
             <p class="service-for" data-i18n="services.sys.for">
-              Para quién: negocios que ya facturan y necesitan control sin complicarse la vida.
+              Para quién: negocios que ya facturan y necesitan control sin
+              complicarse la vida.
             </p>
             <ul>
-              <li data-i18n="services.sys.b1">Ver ventas y clientes en un solo lugar</li>
-              <li data-i18n="services.sys.b2">Controlar stock y evitar faltantes</li>
-              <li data-i18n="services.sys.b3">Seguir pedidos y tareas sin perder el hilo</li>
-              <li data-i18n="services.sys.b4">Reportes simples para decidir mejor</li>
+              <li data-i18n="services.sys.b1">
+                Ver ventas y clientes en un solo lugar
+              </li>
+              <li data-i18n="services.sys.b2">
+                Controlar stock y evitar faltantes
+              </li>
+              <li data-i18n="services.sys.b3">
+                Seguir pedidos y tareas sin perder el hilo
+              </li>
+              <li data-i18n="services.sys.b4">
+                Reportes simples para decidir mejor
+              </li>
             </ul>
             <p class="service-examples" data-i18n="services.sys.examples">
-              Ejemplos: control de pedidos para distribuidora, agenda y pacientes para consultorio,
-              seguimiento de obras para empresa de servicios.
+              Ejemplos: control de pedidos para distribuidora, agenda y
+              pacientes para consultorio, seguimiento de obras para empresa de
+              servicios.
             </p>
           </li>
 
           <li class="service-card reveal">
             <span class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 48 48" fill="none">
-                <path d="M10 30c6-12 22-12 28 0" stroke="currentColor" stroke-width="2" />
+                <path
+                  d="M10 30c6-12 22-12 28 0"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
                 <circle cx="14" cy="30" r="3" fill="currentColor" />
                 <circle cx="34" cy="30" r="3" fill="currentColor" />
-                <path d="M24 10v12M18 16l6-6 6 6" stroke="currentColor" stroke-width="2" />
+                <path
+                  d="M24 10v12M18 16l6-6 6 6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
               </svg>
             </span>
-            <h3 data-i18n="services.auto.title">Automatización de tareas repetitivas</h3>
+            <h3 data-i18n="services.auto.title">
+              Automatización de tareas repetitivas
+            </h3>
             <p data-i18n="services.auto.problem">
-              Problema que resolvemos: tu equipo pierde horas haciendo a mano lo que podría hacerse
-              solo.
+              Problema que resolvemos: tu equipo pierde horas haciendo a mano lo
+              que podría hacerse solo.
             </p>
             <p class="service-for" data-i18n="services.auto.for">
-              Para quién: cualquier negocio cansado de copiar datos, mandar recordatorios o armar
-              reportes a mano.
+              Para quién: cualquier negocio cansado de copiar datos, mandar
+              recordatorios o armar reportes a mano.
             </p>
             <ul>
-              <li data-i18n="services.auto.b1">Menos trabajo manual, menos errores</li>
+              <li data-i18n="services.auto.b1">
+                Menos trabajo manual, menos errores
+              </li>
               <li data-i18n="services.auto.b2">Respuestas y avisos a tiempo</li>
-              <li data-i18n="services.auto.b3">Más tiempo para atender clientes</li>
-              <li data-i18n="services.auto.b4">Procesos que no dependen de una sola persona</li>
+              <li data-i18n="services.auto.b3">
+                Más tiempo para atender clientes
+              </li>
+              <li data-i18n="services.auto.b4">
+                Procesos que no dependen de una sola persona
+              </li>
             </ul>
             <p class="service-examples" data-i18n="services.auto.examples">
-              Ejemplos reales: avisos por WhatsApp o correo, pasar datos de formularios a planillas,
-              recordatorios de pagos, reportes semanales, pedidos, stock e inventario.
+              Ejemplos reales: avisos por WhatsApp o correo, pasar datos de
+              formularios a planillas, recordatorios de pagos, reportes
+              semanales, pedidos, stock e inventario.
             </p>
           </li>
         </ul>
@@ -328,68 +478,70 @@
       <section id="casos" class="section cases">
         <header class="section-head reveal">
           <p class="eyebrow" data-i18n="cases.eyebrow">Para tu negocio</p>
-          <h2 data-i18n="cases.title">Mira cómo se traduce esto en negocios como el tuyo</h2>
+          <h2 data-i18n="cases.title">
+            Mira cómo se traduce esto en negocios como el tuyo
+          </h2>
         </header>
         <ul class="case-grid">
           <li class="case-card reveal">
             <h3 data-i18n="cases.fer.title">Ferretería / comercio</h3>
             <p data-i18n="cases.fer.text">
-              Catálogo online, control de stock y pedidos sin anotar en cuadernos. Menos faltantes,
-              más ventas cerradas.
+              Catálogo online, control de stock y pedidos sin anotar en
+              cuadernos. Menos faltantes, más ventas cerradas.
             </p>
           </li>
           <li class="case-card reveal">
             <h3 data-i18n="cases.rest.title">Restaurante / gastronomía</h3>
             <p data-i18n="cases.rest.text">
-              Pedidos ordenados, menú actualizado y menos mensajes perdidos en WhatsApp a la hora
-              pico.
+              Pedidos ordenados, menú actualizado y menos mensajes perdidos en
+              WhatsApp a la hora pico.
             </p>
           </li>
           <li class="case-card reveal">
             <h3 data-i18n="cases.cont.title">Estudio contable</h3>
             <p data-i18n="cases.cont.text">
-              Recepción de documentos, seguimiento de clientes y recordatorios automáticos para no
-              perseguir información.
+              Recepción de documentos, seguimiento de clientes y recordatorios
+              automáticos para no perseguir información.
             </p>
           </li>
           <li class="case-card reveal">
             <h3 data-i18n="cases.inmo.title">Inmobiliaria</h3>
             <p data-i18n="cases.inmo.text">
-              Publicación clara de propiedades, consultas centralizadas y seguimiento de interesados
-              sin perder ninguno.
+              Publicación clara de propiedades, consultas centralizadas y
+              seguimiento de interesados sin perder ninguno.
             </p>
           </li>
           <li class="case-card reveal">
             <h3 data-i18n="cases.serv.title">Empresa de servicios</h3>
             <p data-i18n="cases.serv.text">
-              Agenda de trabajos, estados de cada proyecto y reportes simples para saber qué está
-              pendiente.
+              Agenda de trabajos, estados de cada proyecto y reportes simples
+              para saber qué está pendiente.
             </p>
           </li>
           <li class="case-card reveal">
             <h3 data-i18n="cases.cons.title">Consultorio / profesional</h3>
             <p data-i18n="cases.cons.text">
-              Turnos, recordatorios y ficha de pacientes o clientes en un solo lugar, sin planillas
-              sueltas.
+              Turnos, recordatorios y ficha de pacientes o clientes en un solo
+              lugar, sin planillas sueltas.
             </p>
           </li>
           <li class="case-card reveal">
             <h3 data-i18n="cases.shop.title">Tienda online</h3>
             <p data-i18n="cases.shop.text">
-              Catálogo, pedidos y seguimiento de envíos alineados para vender sin improvisar cada
-              venta.
+              Catálogo, pedidos y seguimiento de envíos alineados para vender
+              sin improvisar cada venta.
             </p>
           </li>
           <li class="case-card reveal">
             <h3 data-i18n="cases.dist.title">Distribuidora</h3>
             <p data-i18n="cases.dist.text">
-              Pedidos de clientes, rutas, stock y cuentas corrientes con menos errores de carga
-              manual.
+              Pedidos de clientes, rutas, stock y cuentas corrientes con menos
+              errores de carga manual.
             </p>
           </li>
         </ul>
         <a class="btn btn-dark reveal" href="#contacto" data-i18n="cases.cta"
-          >Mi negocio es otro — igual quiero hablar</a
+          >¿Tu negocio es diferente? Conversemos.</a
         >
       </section>
 
@@ -401,27 +553,43 @@
         <ol class="process-track">
           <li class="reveal">
             <h3 data-i18n="process.s1.title">Nos cuentas tu problema</h3>
-            <p data-i18n="process.s1.text">En una conversación breve entendemos qué te está frenando.</p>
+            <p data-i18n="process.s1.text">
+              En una conversación breve entendemos qué te está frenando.
+            </p>
           </li>
           <li class="reveal">
-            <h3 data-i18n="process.s2.title">Miramos cómo funciona tu negocio</h3>
-            <p data-i18n="process.s2.text">Detectamos dónde se pierde tiempo, dinero o control.</p>
+            <h3 data-i18n="process.s2.title">
+              Miramos cómo funciona tu negocio
+            </h3>
+            <p data-i18n="process.s2.text">
+              Detectamos dónde se pierde tiempo, dinero o control.
+            </p>
           </li>
           <li class="reveal">
-            <h3 data-i18n="process.s3.title">Te proponemos una solución concreta</h3>
-            <p data-i18n="process.s3.text">Qué haríamos, para qué sirve y cuánto implica.</p>
+            <h3 data-i18n="process.s3.title">
+              Te proponemos una solución concreta
+            </h3>
+            <p data-i18n="process.s3.text">
+              Qué haríamos, para qué sirve y cuánto implica.
+            </p>
           </li>
           <li class="reveal">
             <h3 data-i18n="process.s4.title">Lo construimos contigo</h3>
-            <p data-i18n="process.s4.text">Vas a ver los avances. Nada de “desaparecemos tres meses”.</p>
+            <p data-i18n="process.s4.text">
+              Vas a ver los avances. Nada de “desaparecemos tres meses”.
+            </p>
           </li>
           <li class="reveal">
             <h3 data-i18n="process.s5.title">Te capacitamos</h3>
-            <p data-i18n="process.s5.text">Tu equipo aprende a usarlo sin depender de nosotros.</p>
+            <p data-i18n="process.s5.text">
+              Tu equipo aprende a usarlo sin depender de nosotros.
+            </p>
           </li>
           <li class="reveal">
             <h3 data-i18n="process.s6.title">Seguimos cerca</h3>
-            <p data-i18n="process.s6.text">Soporte y mejoras cuando el negocio lo pide.</p>
+            <p data-i18n="process.s6.text">
+              Soporte y mejoras cuando el negocio lo pide.
+            </p>
           </li>
         </ol>
       </section>
@@ -432,54 +600,86 @@
           <h2 data-i18n="why.title">Lo que sí puedes esperar de nosotros</h2>
         </header>
         <ul class="why-list">
-          <li class="reveal" data-i18n="why.i1">No te empujamos un producto genérico: preparamos lo que tu negocio necesita.</li>
-          <li class="reveal" data-i18n="why.i2">Te hablamos en castellano claro, sin jerga técnica.</li>
-          <li class="reveal" data-i18n="why.i3">Presupuesto transparente: sabes qué incluye y qué no.</li>
-          <li class="reveal" data-i18n="why.i4">Sin costos ocultos ni “después vemos”.</li>
-          <li class="reveal" data-i18n="why.i5">Comunicación rápida: respondemos y damos seguimiento.</li>
-          <li class="reveal" data-i18n="why.i6">Acompañamiento después de entregar, no solo el día del lanzamiento.</li>
+          <li class="reveal" data-i18n="why.i1">
+            No te empujamos un producto genérico: preparamos lo que tu negocio
+            necesita.
+          </li>
+          <li class="reveal" data-i18n="why.i2">
+            Te hablamos en castellano claro, sin jerga técnica.
+          </li>
+          <li class="reveal" data-i18n="why.i3">
+            Presupuesto transparente: sabes qué incluye y qué no.
+          </li>
+          <li class="reveal" data-i18n="why.i4">
+            Sin costos ocultos ni “después vemos”.
+          </li>
+          <li class="reveal" data-i18n="why.i5">
+            Comunicación rápida: respondemos y damos seguimiento.
+          </li>
+          <li class="reveal" data-i18n="why.i6">
+            Acompañamiento después de entregar, no solo el día del lanzamiento.
+          </li>
         </ul>
       </section>
 
       <section id="testimonios" class="section testimonials">
         <header class="section-head reveal">
-          <p class="eyebrow" data-i18n="testimonials.eyebrow">Lo que dicen</p>
-          <h2 data-i18n="testimonials.title">Historias de negocios que ordenaron su día a día</h2>
+          <p class="eyebrow" data-i18n="testimonials.eyebrow">Casos reales</p>
+          <h2 data-i18n="testimonials.title">
+            Historias de negocios que ordenaron su día a día
+          </h2>
           <p class="section-lead" data-i18n="testimonials.lead">
-            Ejemplos ilustrativos mientras sumamos casos reales de clientes.
+            Proyectos reales donde pasamos del caos manual a un flujo claro:
+            web, pagos y administración.
           </p>
         </header>
-        <ul class="testimonial-grid">
+        <ul class="testimonial-grid testimonial-grid--cases">
           <li class="testimonial-card reveal">
-            <blockquote>
-              <p data-i18n="testimonials.t1.text">
-                “Antes perdíamos pedidos en WhatsApp. Ahora todo queda registrado y el equipo sabe qué
-                tiene que hacer.”
-              </p>
-            </blockquote>
+            <p class="case-label" data-i18n="testimonials.t1.label">Caso 1</p>
+            <h3 data-i18n="testimonials.t1.title">
+              Estudio contable — creación de empresas LLC
+            </h3>
+            <p data-i18n="testimonials.t1.text">
+              Digitalizamos toda la gestión de clientes que necesitan constituir
+              empresas LLC: una página web para captar y orientar la solicitud,
+              con seguimiento ordenado de cada trámite.
+            </p>
+            <ul class="case-results">
+              <li data-i18n="testimonials.t1.r1">
+                Presencia online clara para atraer clientes
+              </li>
+              <li data-i18n="testimonials.t1.r2">
+                Solicitudes y datos centralizados
+              </li>
+              <li data-i18n="testimonials.t1.r3">
+                Menos idas y vueltas por correo o WhatsApp
+              </li>
+            </ul>
             <p class="testimonial-meta" data-i18n="testimonials.t1.meta">
-              Dueña de comercio — materiales y ferretería
+              Contador / estudio — constitución de sociedades
             </p>
           </li>
           <li class="testimonial-card reveal">
-            <blockquote>
-              <p data-i18n="testimonials.t2.text">
-                “La web empezó a traer consultas de verdad. No es un folleto: es una herramienta de
-                venta.”
-              </p>
-            </blockquote>
+            <p class="case-label" data-i18n="testimonials.t2.label">Caso 2</p>
+            <h3 data-i18n="testimonials.t2.title">
+              Pagos y administración automatizada
+            </h3>
+            <p data-i18n="testimonials.t2.text">
+              Sobre el mismo proyecto, incorporamos pagos por plataforma y un
+              panel de administración que automatiza la gestión de la empresa:
+              datos, cobros y formularios, sin repetir trabajo a mano.
+            </p>
+            <ul class="case-results">
+              <li data-i18n="testimonials.t2.r1">Cobros online sin fricción</li>
+              <li data-i18n="testimonials.t2.r2">
+                Formularios y datos conectados al proceso
+              </li>
+              <li data-i18n="testimonials.t2.r3">
+                Menos errores y más control del día a día
+              </li>
+            </ul>
             <p class="testimonial-meta" data-i18n="testimonials.t2.meta">
-              Socio — estudio de servicios profesionales
-            </p>
-          </li>
-          <li class="testimonial-card reveal">
-            <blockquote>
-              <p data-i18n="testimonials.t3.text">
-                “Dejamos de armar reportes a mano. Recuperamos horas por semana y hay menos errores.”
-              </p>
-            </blockquote>
-            <p class="testimonial-meta" data-i18n="testimonials.t3.meta">
-              Responsable de operaciones — distribuidora
+              Contador / estudio — operaciones y cobros
             </p>
           </li>
         </ul>
@@ -495,9 +695,9 @@
             <details>
               <summary data-i18n="faq.q1">¿Cuánto demora un proyecto?</summary>
               <p data-i18n="faq.a1">
-                Depende de lo que necesites. Una página clara suele estar en pocas semanas. Un
-                sistema a medida puede llevar desde un mes en adelante. En la primera conversación te
-                damos un plazo realista.
+                Depende de lo que necesites. Una página clara suele estar en
+                pocas semanas. Un sistema a medida puede llevar desde un mes en
+                adelante. En la primera conversación te damos un plazo realista.
               </p>
             </details>
           </li>
@@ -505,26 +705,31 @@
             <details>
               <summary data-i18n="faq.q2">¿Cuánto cuesta?</summary>
               <p data-i18n="faq.a2">
-                No hay un precio único: depende del alcance. Después de entender tu problema, te
-                enviamos un presupuesto claro, ítem por ítem, sin sorpresas.
+                No hay un precio único: depende del alcance. Después de entender
+                tu problema, te enviamos un presupuesto claro, ítem por ítem,
+                sin sorpresas.
               </p>
             </details>
           </li>
           <li class="reveal">
             <details>
-              <summary data-i18n="faq.q3">¿Trabajan con empresas pequeñas?</summary>
+              <summary data-i18n="faq.q3">
+                ¿Trabajan con empresas pequeñas?
+              </summary>
               <p data-i18n="faq.a3">
-                Sí. Ese es nuestro foco: comercios, emprendedores y pymes que necesitan orden sin
-                pagar de más por cosas que no van a usar.
+                Sí. Ese es nuestro foco: comercios, emprendedores y pymes que
+                necesitan orden sin pagar de más por cosas que no van a usar.
               </p>
             </details>
           </li>
           <li class="reveal">
             <details>
-              <summary data-i18n="faq.q4">¿Pueden mejorar algo que ya tengo?</summary>
+              <summary data-i18n="faq.q4">
+                ¿Pueden mejorar algo que ya tengo?
+              </summary>
               <p data-i18n="faq.a4">
-                En muchos casos sí. Miramos lo que ya usas y te decimos si conviene mejorar,
-                conectar o reemplazar — con honestidad.
+                En muchos casos sí. Miramos lo que ya usas y te decimos si
+                conviene mejorar, conectar o reemplazar — con honestidad.
               </p>
             </details>
           </li>
@@ -532,8 +737,8 @@
             <details>
               <summary data-i18n="faq.q5">¿También hacen páginas web?</summary>
               <p data-i18n="faq.a5">
-                Sí. Páginas pensadas para que te escriban, te llamen o te compren — no solo para
-                “estar en internet”.
+                Sí. Páginas pensadas para que te escriban, te llamen o te
+                compren — no solo para “estar en internet”.
               </p>
             </details>
           </li>
@@ -541,8 +746,8 @@
             <details>
               <summary data-i18n="faq.q6">¿Ofrecen soporte después?</summary>
               <p data-i18n="faq.a6">
-                Sí. Te acompañamos para que lo uses con confianza y para ajustar lo que haga falta
-                cuando el negocio cambie.
+                Sí. Te acompañamos para que lo uses con confianza y para ajustar
+                lo que haga falta cuando el negocio cambie.
               </p>
             </details>
           </li>
@@ -554,8 +759,9 @@
           <p class="eyebrow" data-i18n="contact.eyebrow">Empecemos</p>
           <h2 data-i18n="contact.title">Cuéntanos qué te está pasando</h2>
           <p data-i18n="contact.lead">
-            No es un formulario frío. Es el inicio de una conversación. Te respondemos dentro de las
-            próximas 24 horas con una orientación inicial, sin costo.
+            No es un formulario frío. Es el inicio de una conversación. Te
+            respondemos dentro de las próximas 24 horas con una orientación
+            inicial, sin costo.
           </p>
           <ul class="contact-trust">
             <li data-i18n="contact.trust1">Sin compromiso de contratar</li>
@@ -571,7 +777,9 @@
           </label>
 
           <label>
-            <span data-i18n="contact.business">¿Qué tipo de negocio tienes?</span>
+            <span data-i18n="contact.business"
+              >¿Qué tipo de negocio tienes?</span
+            >
             <input
               type="text"
               name="business"
@@ -582,27 +790,39 @@
           </label>
 
           <fieldset class="choice-group">
-            <legend data-i18n="contact.needLegend">¿Qué necesitas resolver?</legend>
+            <legend data-i18n="contact.needLegend">
+              ¿Qué necesitas resolver?
+            </legend>
             <label class="choice">
               <input type="checkbox" name="need" value="web" />
-              <span data-i18n="contact.needWeb">Traer más clientes con una página web</span>
+              <span data-i18n="contact.needWeb"
+                >Traer más clientes con una página web</span
+              >
             </label>
             <label class="choice">
               <input type="checkbox" name="need" value="system" />
-              <span data-i18n="contact.needSys">Ordenar ventas, stock o clientes</span>
+              <span data-i18n="contact.needSys"
+                >Ordenar ventas, stock o clientes</span
+              >
             </label>
             <label class="choice">
               <input type="checkbox" name="need" value="auto" />
-              <span data-i18n="contact.needAuto">Automatizar tareas repetitivas</span>
+              <span data-i18n="contact.needAuto"
+                >Automatizar tareas repetitivas</span
+              >
             </label>
             <label class="choice">
               <input type="checkbox" name="need" value="unsure" />
-              <span data-i18n="contact.needUnsure">No estoy seguro — quiero orientación</span>
+              <span data-i18n="contact.needUnsure"
+                >No estoy seguro — quiero orientación</span
+              >
             </label>
           </fieldset>
 
           <label>
-            <span data-i18n="contact.problem">¿Qué problema quieres resolver?</span>
+            <span data-i18n="contact.problem"
+              >¿Qué problema quieres resolver?</span
+            >
             <textarea
               name="problem"
               rows="4"
@@ -613,7 +833,9 @@
           </label>
 
           <fieldset class="choice-group">
-            <legend data-i18n="contact.channelLegend">¿Cómo prefieres que te contactemos?</legend>
+            <legend data-i18n="contact.channelLegend">
+              ¿Cómo prefieres que te contactemos?
+            </legend>
             <label class="choice">
               <input type="radio" name="channel" value="email" checked />
               <span data-i18n="contact.channelEmail">Email</span>
@@ -633,11 +855,19 @@
             <input type="text" name="contact" required autocomplete="email" />
           </label>
 
-          <button class="btn" type="submit" data-i18n="contact.submit">Quiero que me contacten</button>
+          <button class="btn" type="submit" data-i18n="contact.submit">
+            Quiero que me contacten
+          </button>
           <p class="form-note" data-i18n="contact.after">
-            Después de enviar: revisamos tu mensaje y te respondemos con próximos pasos claros.
+            Después de enviar: revisamos tu mensaje y te respondemos con
+            próximos pasos claros.
           </p>
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <p
+            class="form-status"
+            id="form-status"
+            role="status"
+            aria-live="polite"
+          ></p>
         </form>
       </section>
     </main>
@@ -646,13 +876,21 @@
       <a class="brand" href="#inicio" aria-label="FOCO">
         <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
           <rect width="32" height="32" fill="currentColor" />
-          <circle cx="16" cy="16" r="7.5" fill="none" stroke="#f2f5f3" stroke-width="2.2" />
+          <circle
+            cx="16"
+            cy="16"
+            r="7.5"
+            fill="none"
+            stroke="#f2f5f3"
+            stroke-width="2.2"
+          />
           <circle cx="16" cy="16" r="2.4" fill="#c45a2c" />
         </svg>
         <span class="brand-name">FOCO</span>
       </a>
       <p data-i18n="footer">
-        Ayudamos a pequeñas empresas a ahorrar tiempo, vender más y tener el control de su negocio.
+        Ayudamos a pequeñas empresas a ahorrar tiempo, vender más y tener el
+        control de su negocio.
       </p>
     </footer>
 

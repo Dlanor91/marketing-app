@@ -5,7 +5,7 @@ const translations = {
     "nav.services": "Qué hacemos",
     "nav.cases": "Para tu negocio",
     "nav.process": "Cómo trabajamos",
-    "nav.faq": "Preguntas",
+    "nav.faq": "Preguntas frecuentes",
     "nav.cta": "Hablemos de tu negocio",
     menu: "Abrir menú",
     "hero.title":
@@ -13,8 +13,9 @@ const translations = {
     "hero.lead":
       "Pensado para dueños de comercios, pymes y emprendimientos que necesitan orden, no tecnicismos.",
     "hero.ctaPrimary": "Quiero mejorar mi negocio",
-    "hero.ctaSecondary": "Qué podemos hacer por ti",
-    "hero.note": "Primera conversación sin costo. Te respondemos en menos de 24 horas.",
+    "hero.ctaSecondary": "Cómo podemos ayudarte",
+    "hero.note":
+      "Primera conversación sin costo. Te respondemos en menos de 24 horas.",
     "problems.eyebrow": "¿Te suena familiar?",
     "problems.title": "Si tu día a día se parece a esto, podemos ayudarte",
     "problems.i1": "Tu negocio vive en Excel y WhatsApp.",
@@ -22,9 +23,11 @@ const translations = {
     "problems.i3": "Pierdes tiempo en tareas que se repiten todos los días.",
     "problems.i4": "Tu página web existe, pero casi no trae clientes.",
     "problems.i5": "No sabes con claridad cuánto vendes ni qué te queda.",
-    "problems.i6": "El negocio creció, pero la administración sigue siendo manual.",
+    "problems.i6":
+      "El negocio creció, pero la administración sigue siendo manual.",
     "problems.i7": "Se te escapan pedidos, stock o seguimientos de clientes.",
-    "problems.i8": "Dependes de una sola persona que “tiene todo en la cabeza”.",
+    "problems.i8":
+      "Dependes de una sola persona que “tiene todo en la cabeza”.",
     "problems.close":
       "Si te identificas con alguna, no hace falta seguir así: podemos ayudarte a poner orden y recuperar control.",
     "problems.cta": "Quiero ordenar esto",
@@ -91,41 +94,53 @@ const translations = {
     "cases.dist.title": "Distribuidora",
     "cases.dist.text":
       "Pedidos de clientes, rutas, stock y cuentas corrientes con menos errores de carga manual.",
-    "cases.cta": "Mi negocio es otro — igual quiero hablar",
+    "cases.cta": "¿Tu negocio es diferente? Conversemos.",
     "process.eyebrow": "Cómo trabajamos",
     "process.title": "Simple, claro y sin sorpresas",
     "process.s1.title": "Nos cuentas tu problema",
-    "process.s1.text": "En una conversación breve entendemos qué te está frenando.",
+    "process.s1.text":
+      "En una conversación breve entendemos qué te está frenando.",
     "process.s2.title": "Miramos cómo funciona tu negocio",
     "process.s2.text": "Detectamos dónde se pierde tiempo, dinero o control.",
     "process.s3.title": "Te proponemos una solución concreta",
     "process.s3.text": "Qué haríamos, para qué sirve y cuánto implica.",
     "process.s4.title": "Lo construimos contigo",
-    "process.s4.text": "Vas a ver los avances. Nada de “desaparecemos tres meses”.",
+    "process.s4.text":
+      "Vas a ver los avances. Nada de “desaparecemos tres meses”.",
     "process.s5.title": "Te capacitamos",
     "process.s5.text": "Tu equipo aprende a usarlo sin depender de nosotros.",
     "process.s6.title": "Seguimos cerca",
     "process.s6.text": "Soporte y mejoras cuando el negocio lo pide.",
     "why.eyebrow": "Por qué FOCO",
     "why.title": "Lo que sí puedes esperar de nosotros",
-    "why.i1": "No te empujamos un producto genérico: preparamos lo que tu negocio necesita.",
+    "why.i1":
+      "No te empujamos un producto genérico: preparamos lo que tu negocio necesita.",
     "why.i2": "Te hablamos en castellano claro, sin jerga técnica.",
     "why.i3": "Presupuesto transparente: sabes qué incluye y qué no.",
     "why.i4": "Sin costos ocultos ni “después vemos”.",
     "why.i5": "Comunicación rápida: respondemos y damos seguimiento.",
-    "why.i6": "Acompañamiento después de entregar, no solo el día del lanzamiento.",
-    "testimonials.eyebrow": "Lo que dicen",
+    "why.i6":
+      "Acompañamiento después de entregar, no solo el día del lanzamiento.",
+    "testimonials.eyebrow": "Casos reales",
     "testimonials.title": "Historias de negocios que ordenaron su día a día",
-    "testimonials.lead": "Ejemplos ilustrativos mientras sumamos casos reales de clientes.",
+    "testimonials.lead":
+      "Proyectos reales donde pasamos del caos manual a un flujo claro: web, pagos y administración.",
+    "testimonials.t1.label": "Caso 1",
+    "testimonials.t1.title": "Estudio contable — creación de empresas LLC",
     "testimonials.t1.text":
-      "“Antes perdíamos pedidos en WhatsApp. Ahora todo queda registrado y el equipo sabe qué tiene que hacer.”",
-    "testimonials.t1.meta": "Dueña de comercio — materiales y ferretería",
+      "Digitalizamos toda la gestión de clientes que necesitan constituir empresas LLC: una página web para captar y orientar la solicitud, con seguimiento ordenado de cada trámite.",
+    "testimonials.t1.r1": "Presencia online clara para atraer clientes",
+    "testimonials.t1.r2": "Solicitudes y datos centralizados",
+    "testimonials.t1.r3": "Menos idas y vueltas por correo o WhatsApp",
+    "testimonials.t1.meta": "Contador / estudio — constitución de sociedades",
+    "testimonials.t2.label": "Caso 2",
+    "testimonials.t2.title": "Pagos y administración automatizada",
     "testimonials.t2.text":
-      "“La web empezó a traer consultas de verdad. No es un folleto: es una herramienta de venta.”",
-    "testimonials.t2.meta": "Socio — estudio de servicios profesionales",
-    "testimonials.t3.text":
-      "“Dejamos de armar reportes a mano. Recuperamos horas por semana y hay menos errores.”",
-    "testimonials.t3.meta": "Responsable de operaciones — distribuidora",
+      "Sobre el mismo proyecto, incorporamos pagos por plataforma y un panel de administración que automatiza la gestión de la empresa: datos, cobros y formularios, sin repetir trabajo a mano.",
+    "testimonials.t2.r1": "Cobros online sin fricción",
+    "testimonials.t2.r2": "Formularios y datos conectados al proceso",
+    "testimonials.t2.r3": "Menos errores y más control del día a día",
+    "testimonials.t2.meta": "Contador / estudio — operaciones y cobros",
     "faq.eyebrow": "Preguntas frecuentes",
     "faq.title": "Antes de escribirnos, esto suele ayudar",
     "faq.q1": "¿Cuánto demora un proyecto?",
@@ -147,7 +162,7 @@ const translations = {
     "faq.a6":
       "Sí. Te acompañamos para que lo uses con confianza y para ajustar lo que haga falta cuando el negocio cambie.",
     "contact.eyebrow": "Empecemos",
-    "contact.title": "Cuéntanos qué te está pasando",
+    "contact.title": "Cuéntanos en qué podemos ayudarte",
     "contact.lead":
       "No es un formulario frío. Es el inicio de una conversación. Te respondemos dentro de las próximas 24 horas con una orientación inicial, sin costo.",
     "contact.trust1": "Sin compromiso de contratar",
@@ -162,7 +177,8 @@ const translations = {
     "contact.needAuto": "Automatizar tareas repetitivas",
     "contact.needUnsure": "No estoy seguro — quiero orientación",
     "contact.problem": "¿Qué problema quieres resolver?",
-    "contact.problemPh": "Cuéntanos en tus palabras. No hace falta que suene técnico.",
+    "contact.problemPh":
+      "Cuéntanos en tus palabras. No hace falta que suene técnico.",
     "contact.channelLegend": "¿Cómo prefieres que te contactemos?",
     "contact.channelEmail": "Email",
     "contact.channelWa": "WhatsApp",
@@ -190,7 +206,7 @@ const translations = {
     "hero.lead":
       "Built for owners of shops, SMEs and startups who need order — not technical jargon.",
     "hero.ctaPrimary": "I want to improve my business",
-    "hero.ctaSecondary": "What we can do for you",
+    "hero.ctaSecondary": "How we can help you",
     "hero.note": "First conversation free. We reply within 24 hours.",
     "problems.eyebrow": "Sound familiar?",
     "problems.title": "If your day looks like this, we can help",
@@ -200,7 +216,8 @@ const translations = {
     "problems.i4": "Your website exists, but barely brings in customers.",
     "problems.i5": "You don't clearly know how much you sell or what's left.",
     "problems.i6": "The business grew, but admin is still manual.",
-    "problems.i7": "Orders, stock or customer follow-ups slip through the cracks.",
+    "problems.i7":
+      "Orders, stock or customer follow-ups slip through the cracks.",
     "problems.i8": "You depend on one person who “has it all in their head”.",
     "problems.close":
       "If any of these sound familiar, you don't have to keep living like this — we can help you get organized and back in control.",
@@ -268,7 +285,7 @@ const translations = {
     "cases.dist.title": "Distributor",
     "cases.dist.text":
       "Customer orders, routes, stock and accounts with fewer manual entry mistakes.",
-    "cases.cta": "My industry is different — I still want to talk",
+    "cases.cta": "Is your business different? Let's talk.",
     "process.eyebrow": "How we work",
     "process.title": "Simple, clear, no surprises",
     "process.s1.title": "You tell us the problem",
@@ -285,24 +302,34 @@ const translations = {
     "process.s6.text": "Support and improvements when the business needs them.",
     "why.eyebrow": "Why FOCO",
     "why.title": "What you can expect from us",
-    "why.i1": "We don't push a generic product: we build what your business needs.",
+    "why.i1":
+      "We don't push a generic product: we build what your business needs.",
     "why.i2": "We speak plain language — no jargon.",
     "why.i3": "Transparent pricing: you know what's included and what isn't.",
     "why.i4": "No hidden fees or “we'll see later”.",
     "why.i5": "Fast communication: we reply and follow through.",
     "why.i6": "Support after delivery — not only on launch day.",
-    "testimonials.eyebrow": "What people say",
-    "testimonials.title": "Stories from businesses that got their day under control",
-    "testimonials.lead": "Illustrative examples while we add real client stories.",
+    "testimonials.eyebrow": "Real cases",
+    "testimonials.title":
+      "Business stories that got day-to-day work under control",
+    "testimonials.lead":
+      "Real projects where we moved from manual chaos to a clear flow: website, payments and administration.",
+    "testimonials.t1.label": "Case 1",
+    "testimonials.t1.title": "Accounting firm — LLC company formation",
     "testimonials.t1.text":
-      "“We used to lose orders in WhatsApp. Now everything is logged and the team knows what to do.”",
-    "testimonials.t1.meta": "Shop owner — materials & hardware",
+      "We digitized the full client workflow for forming LLC companies: a website to capture and guide each request, with ordered follow-up for every case.",
+    "testimonials.t1.r1": "Clear online presence to attract clients",
+    "testimonials.t1.r2": "Requests and data in one place",
+    "testimonials.t1.r3": "Fewer back-and-forth emails or WhatsApp threads",
+    "testimonials.t1.meta": "Accountant / firm — company formation",
+    "testimonials.t2.label": "Case 2",
+    "testimonials.t2.title": "Payments and automated administration",
     "testimonials.t2.text":
-      "“The website started bringing real inquiries. It's not a brochure — it's a sales tool.”",
-    "testimonials.t2.meta": "Partner — professional services firm",
-    "testimonials.t3.text":
-      "“We stopped building reports by hand. We got hours back every week and fewer mistakes.”",
-    "testimonials.t3.meta": "Operations lead — distributor",
+      "On the same project, we added platform payments and an admin panel that automates company operations: data, collections and forms — without repeating work by hand.",
+    "testimonials.t2.r1": "Online payments without friction",
+    "testimonials.t2.r2": "Forms and data connected to the process",
+    "testimonials.t2.r3": "Fewer errors and more day-to-day control",
+    "testimonials.t2.meta": "Accountant / firm — operations and collections",
     "faq.eyebrow": "FAQ",
     "faq.title": "Before you write, this usually helps",
     "faq.q1": "How long does a project take?",
@@ -339,16 +366,20 @@ const translations = {
     "contact.needAuto": "Automate repetitive tasks",
     "contact.needUnsure": "Not sure — I want guidance",
     "contact.problem": "What problem do you want to solve?",
-    "contact.problemPh": "Tell us in your own words. No need to sound technical.",
+    "contact.problemPh":
+      "Tell us in your own words. No need to sound technical.",
     "contact.channelLegend": "How should we contact you?",
     "contact.channelEmail": "Email",
     "contact.channelWa": "WhatsApp",
     "contact.channelCall": "Phone call",
     "contact.contact": "Email or WhatsApp",
     "contact.submit": "I want you to contact me",
-    "contact.after": "After you send: we review your message and reply with clear next steps.",
-    "contact.success": "Got it. We received your message and will contact you within 24 hours.",
-    footer: "We help small businesses save time, sell more and stay in control.",
+    "contact.after":
+      "After you send: we review your message and reply with clear next steps.",
+    "contact.success":
+      "Got it. We received your message and will contact you within 24 hours.",
+    footer:
+      "We help small businesses save time, sell more and stay in control.",
   },
 };
 
@@ -413,7 +444,7 @@ window.addEventListener(
   () => {
     header.classList.toggle("is-scrolled", window.scrollY > 12);
   },
-  { passive: true }
+  { passive: true },
 );
 
 const revealEls = document.querySelectorAll(".reveal");
@@ -426,7 +457,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+  { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
 );
 
 revealEls.forEach((el, i) => {
@@ -447,5 +478,20 @@ form.addEventListener("submit", (event) => {
   form.reset();
   form.querySelector('input[name="channel"][value="email"]').checked = true;
 });
+
+const heroSlides = document.querySelectorAll(".hero-slide");
+if (heroSlides.length > 1) {
+  let heroIndex = 0;
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+  if (!reduceMotion) {
+    setInterval(() => {
+      heroSlides[heroIndex].classList.remove("is-active");
+      heroIndex = (heroIndex + 1) % heroSlides.length;
+      heroSlides[heroIndex].classList.add("is-active");
+    }, 5500);
+  }
+}
 
 applyLanguage("es");
