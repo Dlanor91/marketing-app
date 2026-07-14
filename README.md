@@ -1,10 +1,18 @@
 # FOCO — Landing comercial para pymes
 
-Sitio estático bilingüe (**ES / EN**) orientado a **conversión**. El visitante objetivo es el dueño de un comercio, pyme o emprendimiento: debe entender en segundos qué hacemos, para quién, qué problema resolvemos y cómo contactarnos.
+Sitio estático bilingüe (**ES / EN**) orientado a **conversión** (CRO v2). El visitante objetivo es el dueño de un comercio, pyme o emprendimiento: debe entender en segundos qué hacemos, para quién, qué problema resolvemos y cómo contactarnos.
 
 No vendemos tecnología ni “desarrollo”. Vendemos **tiempo recuperado, más ventas, menos errores y control del negocio**.
 
-Antes de cambiar copy, estructura o diseño, lee **[Agent.md](./Agent.md)** (requisitos obligatorios).
+### Docs del proyecto
+
+| Archivo | Para qué |
+|---------|----------|
+| **[AGENT.md](./AGENT.md)** | Reglas obligatorias al editar (producto, idioma, responsive, checklist) |
+| **[ARCHITECTURE.md](./ARCHITECTURE.md)** | Cómo está armado el sitio (archivos, i18n, deploy, breakpoints) |
+| **[COPY.md](./COPY.md)** | Voz, mensajes canónicos y CTAs preferidos |
+
+Si el cambio lo amerita —nuevas secciones, CTAs, comportamiento, docs— actualizá también este README en el mismo trabajo (ver sección 10 de `AGENT.md`).
 
 ---
 
@@ -27,26 +35,37 @@ Logo: isotipo de “foco” (círculo + punto) en SVG inline (header, hero y foo
 - Deploy: **Azure Static Web Apps** (GitHub Actions)
 - Imágenes del hero en `assets/hero/` (locales, versionadas en el repo)
 
+Detalle técnico: [ARCHITECTURE.md](./ARCHITECTURE.md).
+
 ---
 
-## Secciones (funnel CRO)
+## Secciones (funnel CRO v2)
 
-1. **Hero** — promesa clara + CTAs humanos + carrusel de 3 fotos
-2. **Problemas** — identificación (“¿te suena familiar?”) + CTA
-3. **Servicios** — web / sistemas / automatización (problema, beneficios, para quién, ejemplos)
-4. **Para tu negocio** — ferretería, restaurante, contable, inmobiliaria, etc.
-5. **Cómo trabajamos** — pasos humanos, sin metodología técnica
-6. **Por qué FOCO** — confianza concreta (transparencia, soporte, lenguaje claro)
-7. **Casos reales** — estudio contable LLC (web + pagos/admin)
-8. **Preguntas frecuentes** — plazos, precio, pymes, soporte…
-9. **Contacto** — formulario conversacional (negocio, necesidad, canal, qué pasa después)
+1. **Hero** — *Más control. Menos caos.* + CTAs + señales de confianza + carrusel
+2. **Problemas** — tarjetas problema + consecuencia + CTA
+3. **Servicios** — web / sistemas / automatización / marketing (4 tarjetas)
+4. **Para tu negocio** — rubros con icono y resultado corto
+5. **Cómo trabajamos** — 6 pasos humanos
+6. **Confianza / Relación** — por qué siguen con nosotros
+7. **Preguntas frecuentes**
+8. **Contacto** — formulario conversacional (incluye marketing)
+
+### Qué se eliminó a propósito (ruido / repetición)
+
+- Sección **Casos reales** (mejor contarlo en la reunión personal; en web suele sonar a humo sin prueba verificable)
+- Sección Visión / “Resultados”
+- Caja “Lo que puedes conseguir”
+- Franja de números
+- Segunda sección “Por qué FOCO”
+- Historias secundarias no verificadas
 
 ### CTAs principales (ES)
 
-- Hero primario / sección problemas: **Quiero mejorar mi negocio**
-- Hero secundario: **Cómo podemos ayudarte**
-- Header / menú: **Hablemos de tu negocio**
-- Casos por negocio: **¿Tu negocio es diferente? Conversemos.**
+Ver lista canónica en [COPY.md](./COPY.md). Resumen:
+
+- Hero: **Quiero mejorar mi negocio** / **Cómo podemos ayudarte**
+- Header: **Hablemos de tu negocio**
+- Problemas / casos: **Quiero mejorar mi negocio** / **¿Tu negocio es diferente? Conversemos.**
 - Formulario: **Quiero que me contacten**
 
 ---
@@ -55,16 +74,19 @@ Logo: isotipo de “foco” (círculo + punto) en SVG inline (header, hero y foo
 
 ```
 marketing-app/
-├── index.html             # Marcado + fallback ES en data-i18n
+├── index.html
 ├── styles.css
-├── app.js                 # translations ES/EN, menú, reveal, carrusel, form
-├── assets/hero/
-│   ├── negocio-equipo.jpg
-│   ├── comercio-atencion.jpg
-│   └── pyme-trabajo.jpg
-├── Agent.md               # Reglas obligatorias para agentes
+├── app.js
+├── assets/
+│   ├── favicon.svg
+│   ├── favicon-32.png
+│   ├── apple-touch-icon.png
+│   └── hero/
+├── AGENT.md
+├── ARCHITECTURE.md
+├── COPY.md
 ├── README.md
-└── .github/workflows/     # Azure Static Web Apps CI/CD
+└── .github/workflows/
 ```
 
 ---
@@ -85,7 +107,7 @@ Tras cambios de CSS/JS, conviene **Ctrl+F5**.
 
 - Selector **ES / EN** en el header
 - **Fuente de verdad** de textos: `translations` en `app.js`
-- El HTML lleva texto ES como **fallback** (por si el JS tarda o falla); al cargar, `applyLanguage` lo reemplaza
+- El HTML lleva texto ES como **fallback**; al cargar, `applyLanguage` lo reemplaza
 - Al cambiar un string visible: actualizar **HTML + `app.js` (es y en)**
 - Español en **castellano** (tú), **sin voseo**
 - Menú FAQ en ES: **Preguntas frecuentes**
@@ -103,8 +125,11 @@ Tras cambios de CSS/JS, conviene **Ctrl+F5**.
 ## Convenciones técnicas
 
 - Preferir HTML semántico; evitar `div` innecesarios
-- Estilos en **`rem`** (no `px`), salvo APIs que exijan `px` (p. ej. `IntersectionObserver.rootMargin`)
-- Responsive móvil y escritorio
+- Estilos en **`rem`** (no `px`), bordes con `--hairline`; bloque **CRO v2** al final de `styles.css`
+- Full responsive (móvil, tablet, **1024px**, desktop). Nav horizontal solo desde `72rem` (~1152px); debajo, menú hamburguesa (sin wraps en header)
+- `service-grid` en 2 columnas (tablet) y 2×2 o 4 columnas (desktop)
+
+Más detalle: [ARCHITECTURE.md](./ARCHITECTURE.md) y [AGENT.md](./AGENT.md) §6.
 
 ---
 
@@ -129,16 +154,8 @@ Push a `main` → Azure Static Web Apps.
 
 ---
 
-## Casos reales incluidos
-
-1. Estudio contable — web y gestión de clientes para constitución de **LLC**
-2. Mismo proyecto — **pagos por plataforma** + administración (datos, cobros, formularios)
-
----
-
 ## Próximos pasos
 
 - Conectar el formulario a email / WhatsApp / CRM
-- Sumar más casos reales (otros clientes)
 - Dominio definitivo en canonical / Open Graph
 - Opcional: email y WhatsApp visibles en footer

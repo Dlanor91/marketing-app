@@ -58,15 +58,16 @@ La landing debe responder en ~10 segundos:
 
 | Sección | Rol |
 |---------|-----|
-| Hero | Promesa clara + CTA primario + secundario |
-| Problemas | Identificación del dolor |
-| Servicios | 3 líneas: web / sistemas / automatización, con problema, beneficios, para quién, ejemplos |
-| Para tu negocio | Casos por tipo de negocio |
+| Hero | Título corto + subtítulo de resultados + CTA + señales de confianza |
+| Problemas | Primera sección tras el hero: problema + consecuencia en cada ítem |
+| Servicios | 4 líneas: web, sistemas, automatización, marketing/crecimiento; títulos en forma de pregunta |
+| Para tu negocio | Rubros con icono y resultado corto |
 | Cómo trabajamos | Pasos humanos (sin metodología técnica) |
-| Por qué FOCO | Confianza concreta (transparencia, soporte, lenguaje claro) |
-| Casos reales | Historias reales (no inventar testimonios falsos) |
+| Confianza / Relación | Por qué siguen trabajando con nosotros (relación + presupuesto claro) |
 | Preguntas frecuentes | Objeciones (precio, plazos, pymes, soporte…) |
 | Contacto | Formulario conversacional + qué pasa después |
+
+No publicar “casos reales” en la web si no aportan prueba verificable: esos ejemplos se cuentan en la conversación comercial. No inventar testimonios ni historias de clientes.
 
 Si una sección no ayuda a vender, se puede rediseñar; no dejar agujeros en el funnel.
 
@@ -93,7 +94,11 @@ Incluir señales de confianza (sin compromiso, respuesta en 24 h, lenguaje claro
 
 - **HTML semántico**: preferir `section`, `header`, `nav`, `article`, `figure`, `main`, `footer`, `menu`, `fieldset`, `details`… Evitar `div` decorativos innecesarios.
 - Unidades en **`rem`** (no `px` en estilos). Excepción: `IntersectionObserver.rootMargin` solo acepta `px` o `%`.
-- Responsive obligatorio (móvil y escritorio).
+- **Full responsive obligatorio** en móvil, tablet y desktop (incluye ~768px y **1024px**). No basta con “se ve bien en teléfono y en monitor grande”.
+  - El header **no puede** mostrar el menú horizontal si provoca wraps, solapamientos o botones altos de más.
+  - Si no cabe en una sola línea cómoda: menú hamburguesa (hoy: nav desktop desde `72rem` / ~1152px).
+  - Ningún control del header debe partir texto en dos líneas (`white-space: nowrap` en links/CTA del header).
+  - Verificar al menos: ~360px, ~768px, **1024px**, ~1280px. Sin overflow horizontal ni secciones rotas.
 - Animaciones con sentido; respetar `prefers-reduced-motion`.
 - Hero: carrusel local en `assets/hero/` (no depender de URLs externas en producción).
 - Mantener diseño premium, mucho aire, buena jerarquía; sin sobrecargar.
@@ -128,10 +133,11 @@ Incluir señales de confianza (sin compromiso, respuesta en 24 h, lenguaje claro
 - [ ] ¿ES y EN actualizados en `app.js` (y fallback ES en HTML si aplica)?
 - [ ] ¿CTAs claros y humanos?
 - [ ] ¿Funnel completo intacto?
-- [ ] ¿Casos reales sin inventar?
-- [ ] ¿Semántica + `rem` + responsive OK?
+- [ ] ¿Señales de confianza sin “casos” inventados o que suenen a humo?
+- [ ] ¿Semántica + `rem` + **full responsive** OK (móvil, tablet, 1024px, desktop; header sin wraps)?
 - [ ] ¿Hero sigue rotando imágenes locales?
-- [ ] ¿Si el cambio lo amerita, actualizaste `README.md`?
+- [ ] ¿Si el cambio lo amerita, actualizaste `README.md` (y docs relacionados)?
+- [ ] ¿Copy nuevo alineado a `COPY.md`?
 
 ---
 
@@ -149,7 +155,7 @@ Lo amerita, entre otros:
 
 No hace falta tocar el README por typos menores o ajustes cosméticos de CSS sin impacto documental.
 
-El archivo de reglas del agente es **`Agent.md`**. El README debe enlazarlo correctamente.
+El archivo de reglas del agente es **`AGENT.md`**. Complementos: [`ARCHITECTURE.md`](./ARCHITECTURE.md) (mapa técnico) y [`COPY.md`](./COPY.md) (voz y mensajes). El README debe enlazarlos correctamente.
 
 ---
 
